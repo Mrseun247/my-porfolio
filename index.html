@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oguntimehin Oluwaseun — IT Professional</title>
+<title>Oguntimehin Oluwaseun — Full-Stack Web Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -61,6 +61,7 @@
   .hero-left {
     display: flex; flex-direction: column; justify-content: center;
     padding: 5rem 3.5rem 5rem 4rem;
+    min-width: 0;
   }
   .hero-eyebrow {
     font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em;
@@ -73,6 +74,7 @@
     font-weight: 800; line-height: 1.08;
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
+    overflow-wrap: break-word;
   }
   .hero-name span {
     display: block;
@@ -328,7 +330,7 @@
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-links { gap: 1.2rem; }
+    .nav-links { gap: 0.9rem 1rem; flex-wrap: wrap; justify-content: flex-end; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 6rem 1.5rem 3rem; order: 2; }
     .hero-right { order: 1; min-height: 320px; }
@@ -360,7 +362,7 @@
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
-    <p class="hero-eyebrow">IT Professional &amp; ICT Educator</p>
+    <p class="hero-eyebrow">Full-Stack Web Developer | Node.js, Express, MongoDB | Built the official KOSIEC website | ICT Educator</p>
     <h1 class="hero-name">
       Oguntimehin<br>
       <span>Oluwaseun</span>
